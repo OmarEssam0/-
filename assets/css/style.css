@@ -422,5 +422,5 @@ footer ul li a:hover:after {
 .omar{
   display: flex;
   align-items: center;
-  gap: 2;
+  gap: 20px;
 }
