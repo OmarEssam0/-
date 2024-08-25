@@ -203,9 +203,6 @@ position: relative;
   .nav-search{
     display: none !important;
   }
-  .slick-dots {
-    top: 40%;
-  }
   footer{
     text-align: center;
   }
