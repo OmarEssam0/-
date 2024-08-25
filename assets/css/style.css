@@ -190,7 +190,10 @@ header{
   border: #c00 solid 1px !important;
   color: red;
 }
-@media screen and (max-width:600px) {
+@media (max-width:600px) {
+  .omar{
+    flex-wrap: wrap;
+  }
   .flex-wrap{
     flex-wrap:wrap ;
   }
@@ -415,4 +418,9 @@ footer ul li a:hover:after {
 }
 .form-floating>label {
   right: 0 !important;
+}
+.omar{
+  display: flex;
+  align-items: center;
+  gap: 2;
 }
