@@ -9,9 +9,10 @@
     />
     <title>شركة الرسام المحدوده</title>
     <!-- icon title -->
+     <link rel="stylesheet" href="assets/css/animate.css">
     <link
       rel="shortcut icon"
-      href="/assets/images/Logo/LOGO_4.png"
+      href="/assets/images/Logo/LOGO_4.webPindex_page5_car.webP"
       type="image/x-icon"
     />
     <!-- slick slider -->
@@ -44,12 +45,27 @@
     <link rel="stylesheet" href="assets/css/car.css" />
   </head>
   <body dir="rtl">
-    <div class="parent">
+    <div class="whatsApp position-fixed">
+      <a href="https://wa.me/9660550115887" class="text-decoration-none text-white">
+        <i class="fa-brands fa-whatsapp fs-4"></i>
+      </a>
+</div>
       <!-- start navbar -->
       <header>
         <nav class="container-fluid shadow">
           <div class="navbar py-3 px-2">
             <div class="nav-btn">
+              <span
+                id="nav-btn"
+                class="bg-main circle-btn d-flex justify-content-center align-items-center crusor-pointer"
+              >
+                <i
+                  id="icon"
+                  class="fa-solid fa-bars-staggered text-white fs-4"
+                ></i>
+              </span>
+            </div>
+            <div class="nav-bt-mobile">
               <span
                 id="nav-btn"
                 class="bg-main circle-btn d-flex justify-content-center align-items-center crusor-pointer"
@@ -66,11 +82,11 @@
               <h1 class="h5">
                 <a href="index.html" class="text-decoration-none text-black">
                   شركة الرسام المحدودة
-                 </a>
+                </a>
               </h1>
               <div>
                 <img
-                  src="assets/images/Logo/LOGO_4.png"
+                  src="assets/images/Logo/LOGO_4.webP"
                   alt="Logo"
                   width="65"
                   class="logo"
@@ -111,7 +127,7 @@
                     id="product"
                     class="product animate__animated animate__zoomIn d-none"
                   >
-                    <ul class="list-unstyled">
+                    <ul class="list-unstyled mb-0">
                       <li
                         class="d-flex justify-content-between align-items-center crusor-pointer py-3 Brands"
                       >
@@ -148,7 +164,9 @@
                       <li
                         class="d-flex justify-content-between align-items-center crusor-pointer py-3"
                       >
-                        <span>المركبات</span>
+                        <a href="cars.html" class="text-decoration-none"
+                          >المركبات</a
+                        >
                         <i class="fa-solid fa-arrow-left-long scound-color"></i>
                       </li>
                       <li
@@ -165,6 +183,85 @@
             </div>
           </div>
           <!-- end menu -->
+           <!-- mobile nav -->
+           <div class="navbar-mobile py-4 px-1 d-none">
+            <div class="closeIcon my-2 position-relative">
+              <div class="position-absolute xxx px-3">
+                <i class="fa-solid fa-xmark crusor-pointer"></i>
+              </div>
+            </div>
+            <div class="accordion my-5" id="accordionExample">
+              <div class="accordion-item collapsed">
+                <h2 class="accordion-header">
+                  <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    علامات التجاريه
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse " data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ul class="list-unstyled p-0">
+                      <li class="list-mobile my-2">
+                        <a href="#" class="text-black text-decoration-none fw-bold py-2 d-block">
+                          هانجاي
+                        </a>
+                      </li>
+                      <li class="list-mobile my-2">
+                        <a href="#" class="text-black text-decoration-none fw-bold py-2 d-block">
+                          ساويست
+                        </a>
+                        <span>
+                          
+                        </span>
+                      </li>
+                      <li class="list-mobile my-2">
+                        <a href="#" class="text-black text-decoration-none fw-bold py-2 d-block">
+                          ساويست
+                        </a>
+                      </li>
+                      <li class="list-mobile my-2">
+                        <a href="#" class="text-black text-decoration-none fw-bold py-2 d-block">
+                          الدراجات النارية
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    العروض 
+                  </button>
+                </h2>
+
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    الصيانة وقطع غيار 
+                  </button>
+                </h2>
+
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    مواقعنا
+                  </button>
+                </h2>
+
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    الاخبار
+                  </button>
+                </h2>
+
+              </div>
+            </div>
+           </div>
+
         </nav>
       </header>
       <!-- end navbar -->
@@ -230,184 +327,337 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-md-4 col-lg-3">
-              <div class="tt-car-item">
-                <div class="image my-4">
-                  <img src="assets/images/cars/index_page5_car.png" alt="img1" class="img-fluid">
+            <div class="col-md-4 col-lg-3 wow animate__fadeInDown ">
+              <a href="test-car.html" class="text-decoration-none text-black">
+                <div class="tt-car-item">
+                  <div class="image my-4">
+                    <img
+                      src="assets/images/cars/index_page5_car.webP"
+                      alt="img1"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="title text-center mb-4">
+                    <h3 class="px-2 fw-bold fs-5">Hangay N1</h3>
+                  </div>
+                  <div class="links">
+                    <ul class="list-unstyled d-flex p-0 gap-3">
+                      <li >
+                        <i
+                          class="fa-solid fa-chevron-left text-danger fw-bold fs-6 "
+                        ></i>
+                        <a
+                          href="test-car.html"
+                          class="text-decoration-none text-black fw-bold"
+                          >تجربه قياده</a
+                        >
+                      </li>
+                      <li>
+                        <i
+                          class="fa-solid fa-chevron-left text-danger fw-bold fs-6 "
+                        ></i>
+                        <a
+                          href="Book a car.html"
+                          class="text-decoration-none text-black fw-bold"
+                          >حجز السياره</a
+                        >
+                      </li>
+                      <li>
+                        <i
+                          class="fa-solid fa-chevron-left text-danger fw-bold fs-6 ps-2"
+                        ></i>
+                        <a
+                          href="maintenance.html"
+                          class="text-decoration-none text-black fw-bold"
+                          >صيانه</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="title text-center mb-4">
-                  <h3 class="px-2 fw-bold fs-5">Hangay N1</h3>
-                </div>
-                <div class="links ">
-                  <ul class="list-unstyled d-flex gap-4">
-                    <li>
-                      <i class="fa-solid fa-chevron-left text-danger fw-bold fs-6 ps-2"></i>
-                      <a href="#" class="text-decoration-none text-black fw-bold">تجربه قياده</a>
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-chevron-left text-danger fw-bold fs-6 ps-2"></i>
-                      <a href="maintenance.html"  class="text-decoration-none text-black fw-bold">صيانه</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+              </a>
             </div>
-            <div class="col-md-4 col-lg-3">
-              <div class="tt-car-item">
-                <div class="image my-4">
-                  <img src="assets/images/cars/index_page5_car.png" alt="img1" class="img-fluid">
+            <div class="col-md-4 col-lg-3 wow animate__fadeInDown ">
+              <a href="test-car.html" class="text-decoration-none text-black">
+                <div class="tt-car-item">
+                  <div class="image my-4">
+                    <img
+                      src="assets/images/cars/index_page5_car.webP"
+                      alt="img1"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="title text-center mb-4">
+                    <h3 class="px-2 fw-bold fs-5">Hangay N1</h3>
+                  </div>
+                  <div class="links">
+                    <ul class="list-unstyled d-flex p-0 gap-3">
+                      <li >
+                        <i
+                          class="fa-solid fa-chevron-left text-danger fw-bold fs-6 "
+                        ></i>
+                        <a
+                          href="test-car.html"
+                          class="text-decoration-none text-black fw-bold"
+                          >تجربه قياده</a
+                        >
+                      </li>
+                      <li>
+                        <i
+                          class="fa-solid fa-chevron-left text-danger fw-bold fs-6 "
+                        ></i>
+                        <a
+                          href="Book a car.html"
+                          class="text-decoration-none text-black fw-bold"
+                          >حجز السياره</a
+                        >
+                      </li>
+                      <li>
+                        <i
+                          class="fa-solid fa-chevron-left text-danger fw-bold fs-6 ps-2"
+                        ></i>
+                        <a
+                          href="maintenance.html"
+                          class="text-decoration-none text-black fw-bold"
+                          >صيانه</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="title text-center mb-4">
-                  <h3 class="px-2 fw-bold fs-5">Hangay N1</h3>
-                </div>
-                <div class="links ">
-                  <ul class="list-unstyled d-flex gap-4">
-                    <li>
-                      <i class="fa-solid fa-chevron-left text-danger fw-bold fs-6 ps-2"></i>
-                      <a href="#" class="text-decoration-none text-black fw-bold">تجربه قياده</a>
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-chevron-left text-danger fw-bold fs-6 ps-2"></i>
-                      <a href="maintenance.html"  class="text-decoration-none text-black fw-bold">صيانه</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+              </a>
             </div>
-            <div class="col-md-4 col-lg-3">
-              <div class="tt-car-item">
-                <div class="image my-4">
-                  <img src="assets/images/cars/index_page5_car.png" alt="img1" class="img-fluid">
+            <div class="col-md-4 col-lg-3 wow animate__fadeInDown ">
+              <a href="test-car.html" class="text-decoration-none text-black">
+                <div class="tt-car-item">
+                  <div class="image my-4">
+                    <img
+                      src="assets/images/cars/index_page5_car.webP"
+                      alt="img1"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="title text-center mb-4">
+                    <h3 class="px-2 fw-bold fs-5">Hangay N1</h3>
+                  </div>
+                  <div class="links">
+                    <ul class="list-unstyled d-flex p-0 gap-3">
+                      <li >
+                        <i
+                          class="fa-solid fa-chevron-left text-danger fw-bold fs-6 "
+                        ></i>
+                        <a
+                          href="test-car.html"
+                          class="text-decoration-none text-black fw-bold"
+                          >تجربه قياده</a
+                        >
+                      </li>
+                      <li>
+                        <i
+                          class="fa-solid fa-chevron-left text-danger fw-bold fs-6 "
+                        ></i>
+                        <a
+                          href="Book a car.html"
+                          class="text-decoration-none text-black fw-bold"
+                          >حجز السياره</a
+                        >
+                      </li>
+                      <li>
+                        <i
+                          class="fa-solid fa-chevron-left text-danger fw-bold fs-6 ps-2"
+                        ></i>
+                        <a
+                          href="maintenance.html"
+                          class="text-decoration-none text-black fw-bold"
+                          >صيانه</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="title text-center mb-4">
-                  <h3 class="px-2 fw-bold fs-5">Hangay N1</h3>
-                </div>
-                <div class="links ">
-                  <ul class="list-unstyled d-flex gap-4">
-                    <li>
-                      <i class="fa-solid fa-chevron-left text-danger fw-bold fs-6 ps-2"></i>
-                      <a href="#" class="text-decoration-none text-black fw-bold">تجربه قياده</a>
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-chevron-left text-danger fw-bold fs-6 ps-2"></i>
-                      <a href="maintenance.html" class="text-decoration-none text-black fw-bold">صيانه</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+              </a>
             </div>
-            <div class="col-md-4 col-lg-3">
-              <div class="tt-car-item">
-                <div class="image my-4">
-                  <img src="assets/images/cars/index_page5_car.png" alt="img1" class="img-fluid">
+            <div class="col-md-4 col-lg-3 wow animate__fadeInDown ">
+              <a href="test-car.html" class="text-decoration-none text-black">
+                <div class="tt-car-item">
+                  <div class="image my-4">
+                    <img
+                      src="assets/images/cars/index_page5_car.webP"
+                      alt="img1"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="title text-center mb-4">
+                    <h3 class="px-2 fw-bold fs-5">Hangay N1</h3>
+                  </div>
+                  <div class="links">
+                    <ul class="list-unstyled d-flex p-0 gap-3">
+                      <li >
+                        <i
+                          class="fa-solid fa-chevron-left text-danger fw-bold fs-6 "
+                        ></i>
+                        <a
+                          href="test-car.html"
+                          class="text-decoration-none text-black fw-bold"
+                          >تجربه قياده</a
+                        >
+                      </li>
+                      <li>
+                        <i
+                          class="fa-solid fa-chevron-left text-danger fw-bold fs-6 "
+                        ></i>
+                        <a
+                          href="Book a car.html"
+                          class="text-decoration-none text-black fw-bold"
+                          >حجز السياره</a
+                        >
+                      </li>
+                      <li>
+                        <i
+                          class="fa-solid fa-chevron-left text-danger fw-bold fs-6 ps-2"
+                        ></i>
+                        <a
+                          href="maintenance.html"
+                          class="text-decoration-none text-black fw-bold"
+                          >صيانه</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="title text-center mb-4">
-                  <h3 class="px-2 fw-bold fs-5">Hangay N1</h3>
-                </div>
-                <div class="links ">
-                  <ul class="list-unstyled d-flex gap-4">
-                    <li>
-                      <i class="fa-solid fa-chevron-left text-danger fw-bold fs-6 ps-2"></i>
-                      <a href="#" class="text-decoration-none text-black fw-bold">تجربه قياده</a>
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-chevron-left text-danger fw-bold fs-6 ps-2"></i>
-                      <a href="maintenance.html"  class="text-decoration-none text-black fw-bold">صيانه</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+              </a>
             </div>
-            <div class="col-md-4 col-lg-3">
-              <div class="tt-car-item">
-                <div class="image my-4">
-                  <img src="assets/images/cars/index_page5_car.png" alt="img1" class="img-fluid">
+            <div class="col-md-4 col-lg-3 wow animate__fadeInDown ">
+              <a href="test-car.html" class="text-decoration-none text-black">
+                <div class="tt-car-item">
+                  <div class="image my-4">
+                    <img
+                      src="assets/images/cars/index_page5_car.webP"
+                      alt="img1"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="title text-center mb-4">
+                    <h3 class="px-2 fw-bold fs-5">Hangay N1</h3>
+                  </div>
+                  <div class="links">
+                    <ul class="list-unstyled d-flex p-0 gap-3">
+                      <li >
+                        <i
+                          class="fa-solid fa-chevron-left text-danger fw-bold fs-6 "
+                        ></i>
+                        <a
+                          href="test-car.html"
+                          class="text-decoration-none text-black fw-bold"
+                          >تجربه قياده</a
+                        >
+                      </li>
+                      <li>
+                        <i
+                          class="fa-solid fa-chevron-left text-danger fw-bold fs-6 "
+                        ></i>
+                        <a
+                          href="Book a car.html"
+                          class="text-decoration-none text-black fw-bold"
+                          >حجز السياره</a
+                        >
+                      </li>
+                      <li>
+                        <i
+                          class="fa-solid fa-chevron-left text-danger fw-bold fs-6 ps-2"
+                        ></i>
+                        <a
+                          href="maintenance.html"
+                          class="text-decoration-none text-black fw-bold"
+                          >صيانه</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="title text-center mb-4">
-                  <h3 class="px-2 fw-bold fs-5">Hangay N1</h3>
-                </div>
-                <div class="links ">
-                  <ul class="list-unstyled d-flex gap-4">
-                    <li>
-                      <i class="fa-solid fa-chevron-left text-danger fw-bold fs-6 ps-2"></i>
-                      <a href="#" class="text-decoration-none text-black fw-bold">تجربه قياده</a>
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-chevron-left text-danger fw-bold fs-6 ps-2"></i>
-                      <a href="maintenance.html"  class="text-decoration-none text-black fw-bold">صيانه</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+              </a>
             </div>
-            <div class="col-md-4 col-lg-3">
-              <div class="tt-car-item">
-                <div class="image my-4">
-                  <img src="assets/images/cars/index_page5_car.png" alt="img1" class="img-fluid">
+            <div class="col-md-4 col-lg-3 wow animate__fadeInDown ">
+              <a href="test-car.html" class="text-decoration-none text-black">
+                <div class="tt-car-item">
+                  <div class="image my-4">
+                    <img
+                      src="assets/images/cars/index_page5_car.webP"
+                      alt="img1"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="title text-center mb-4">
+                    <h3 class="px-2 fw-bold fs-5">Hangay N1</h3>
+                  </div>
+                  <div class="links">
+                    <ul class="list-unstyled d-flex p-0 gap-3">
+                      <li >
+                        <i
+                          class="fa-solid fa-chevron-left text-danger fw-bold fs-6 "
+                        ></i>
+                        <a
+                          href="test-car.html"
+                          class="text-decoration-none text-black fw-bold"
+                          >تجربه قياده</a
+                        >
+                      </li>
+                      <li>
+                        <i
+                          class="fa-solid fa-chevron-left text-danger fw-bold fs-6 "
+                        ></i>
+                        <a
+                          href="Book a car.html"
+                          class="text-decoration-none text-black fw-bold"
+                          >حجز السياره</a
+                        >
+                      </li>
+                      <li>
+                        <i
+                          class="fa-solid fa-chevron-left text-danger fw-bold fs-6 ps-2"
+                        ></i>
+                        <a
+                          href="maintenance.html"
+                          class="text-decoration-none text-black fw-bold"
+                          >صيانه</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="title text-center mb-4">
-                  <h3 class="px-2 fw-bold fs-5">Hangay N1</h3>
-                </div>
-                <div class="links ">
-                  <ul class="list-unstyled d-flex gap-4">
-                    <li>
-                      <i class="fa-solid fa-chevron-left text-danger fw-bold fs-6 ps-2"></i>
-                      <a href="#" class="text-decoration-none text-black fw-bold">تجربه قياده</a>
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-chevron-left text-danger fw-bold fs-6 ps-2"></i>
-                      <a href="maintenance.html"  class="text-decoration-none text-black fw-bold">صيانه</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+              </a>
             </div>
-            <div class="col-md-4 col-lg-3">
-              <div class="tt-car-item">
-                <div class="image my-4">
-                  <img src="assets/images/cars/index_page5_car.png" alt="img1" class="img-fluid">
-                </div>
-                <div class="title text-center mb-4">
-                  <h3 class="px-2 fw-bold fs-5">Hangay N1</h3>
-                </div>
-                <div class="links ">
-                  <ul class="list-unstyled d-flex gap-4">
-                    <li>
-                      <i class="fa-solid fa-chevron-left text-danger fw-bold fs-6 ps-2"></i>
-                      <a href="#" class="text-decoration-none text-black fw-bold">تجربه قياده</a>
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-chevron-left text-danger fw-bold fs-6 ps-2"></i>
-                      <a href="maintenance.html"  class="text-decoration-none text-black fw-bold">صيانه</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+
+
+           
           </div>
         </div>
       </section>
       <!-- end section cars -->
-       <!-- footer -->
-       <footer class="py-5">
+      <!-- footer -->
+      <footer class="py-5">
         <div class="contact">
           <div class="row flex- container m-auto">
-            <div class="contact-item col-sm-12 col-md-4 d-flex justify-content-center align-items-center">
-              <h3>احصل
-              علي اخر مستجدات هوندا
-            </h3>
-              <img src="assets/images/new-letter.svg"></img>
-             </div>
-              <div class="contact-item col-sm-12 col-md-5 d-flex justify-content-center align-items-center">
-                <input type="email" placeholder="البريد الالكتروني"> 
-                <input type="text" placeholder="الاسم الكامل">
-              </div>
-             
-             <div class="contact-item col-sm-6 col-md-3 d-flex justify-content-center align-items-center">
-              <button class=" d-flex justify-content-between align-items-center">
-                    <i class="bi bi-arrow-left"></i>
-                    <span>الاشتراك</span>
-                  </button>
+            <div
+              class="contact-item col-sm-12 col-md-4 d-flex justify-content-center align-items-center"
+            >
+              <h3>احصل علي اخر مستجدات هوندا</h3>
+              <!-- <img src="assets/images/new-letter.svg"></img> -->
+            </div>
+            <div
+              class="contact-item col-sm-12 col-md-5 d-flex justify-content-center align-items-center"
+            >
+              <input type="email" placeholder="البريد الالكتروني" />
+              <input type="text" placeholder="الاسم الكامل" />
+            </div>
+
+            <div
+              class="contact-item col-sm-6 col-md-3 d-flex justify-content-center align-items-center"
+            >
+              <button class="d-flex justify-content-between align-items-center">
+                <i class="bi bi-arrow-left"></i>
+                <span>الاشتراك</span>
+              </button>
             </div>
           </div>
         </div>
@@ -419,7 +669,9 @@
                 <ul class="list-unstyled p-0 my-4">
                   <li><a href="#" class="text-decoration-none">سيارات</a></li>
                   <li>
-                    <a href="#" class="text-decoration-none">الدراجات النارية</a>
+                    <a href="#" class="text-decoration-none"
+                      >الدراجات النارية</a
+                    >
                   </li>
                   <li>
                     <a href="#" class="text-decoration-none">منتجات الطاقة</a>
@@ -472,7 +724,9 @@
                 <h4 class="footer-title text-white">روابط مفيدة</h4>
                 <ul class="list-unstyled p-0 my-4">
                   <li>
-                    <a href="#" class="text-decoration-none">هوندا حول العالم </a>
+                    <a href="#" class="text-decoration-none"
+                      >هوندا حول العالم
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -498,13 +752,17 @@
                       المملكة العربية السعودية
                     </a>
                   </li>
-                  <li><a href="#" class="text-decoration-none"> البحرين </a></li>
+                  <li>
+                    <a href="#" class="text-decoration-none"> البحرين </a>
+                  </li>
                   <li><a href="#" class="text-decoration-none"> الأردن </a></li>
                   <li><a href="#" class="text-decoration-none"> لبنان </a></li>
                   <li>
                     <a href="#" class="text-decoration-none"> سلطنة عمان </a>
                   </li>
-                  <li><a href="#" class="text-decoration-none"> دولة قطر </a></li>
+                  <li>
+                    <a href="#" class="text-decoration-none"> دولة قطر </a>
+                  </li>
                   <li><a href="#" class="text-decoration-none"> مصر </a></li>
                   <li><a href="#" class="text-decoration-none"> Benin </a></li>
                 </ul>
@@ -513,7 +771,6 @@
           </div>
         </div>
       </footer>
-    </div>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"
@@ -522,6 +779,7 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"
     ></script>
+    <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
   </body>

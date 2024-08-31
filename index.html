@@ -8,6 +8,7 @@
       content="شركة الرسام المحدودة لجميع انواع السيارات"
     />
     <title>شركة الرسام المحدوده</title>
+    <link rel="stylesheet" href="assets/css/animate.css">
     <!-- icon title -->
     <link
       rel="shortcut icon"
@@ -44,9 +45,13 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body dir="rtl">
-  <div class="parent">
+    <div class="whatsApp position-fixed">
+          <a href="https://wa.me/9660550115887" class="text-decoration-none text-white">
+            <i class="fa-brands fa-whatsapp fs-4"></i>
+          </a>
+    </div>
       <!-- start navbar -->
-      <header class="">
+      <header>
         <nav class="container-fluid shadow">
           <div class="navbar py-3 px-2">
             <div class="nav-btn">
@@ -60,17 +65,28 @@
                 ></i>
               </span>
             </div>
+            <div class="nav-bt-mobile">
+              <span
+                id="nav-btn"
+                class="bg-main circle-btn d-flex justify-content-center align-items-center crusor-pointer"
+              >
+                <i
+                  id="icon"
+                  class="fa-solid fa-bars-staggered text-white fs-4"
+                ></i>
+              </span>
+            </div>
             <div
               class="nav-logo d-flex justify-content-between align-items-center gap-2"
             >
-            <h1 class="h5">
-              <a href="index.html" class="text-decoration-none text-black">
-                شركة الرسام المحدودة
-               </a>
-            </h1>
+              <h1 class="h5">
+                <a href="index.html" class="text-decoration-none text-black">
+                  شركة الرسام المحدودة
+                </a>
+              </h1>
               <div>
                 <img
-                  src="assets/images/Logo/LOGO_4.png"
+                  src="assets/images/Logo/LOGO_4.webP"
                   alt="Logo"
                   width="65"
                   class="logo"
@@ -89,7 +105,7 @@
               </div>
             </div>
           </div>
-  
+
           <!-- start menu -->
           <div id="navClick" class="navClick d-none">
             <div class="container-fluid py-5">
@@ -111,7 +127,7 @@
                     id="product"
                     class="product animate__animated animate__zoomIn d-none"
                   >
-                    <ul class="list-unstyled">
+                    <ul class="list-unstyled mb-0">
                       <li
                         class="d-flex justify-content-between align-items-center crusor-pointer py-3 Brands"
                       >
@@ -148,7 +164,9 @@
                       <li
                         class="d-flex justify-content-between align-items-center crusor-pointer py-3"
                       >
-                        <a href="cars.html" class="text-decoration-none">المركبات</a>
+                        <a href="cars.html" class="text-decoration-none"
+                          >المركبات</a
+                        >
                         <i class="fa-solid fa-arrow-left-long scound-color"></i>
                       </li>
                       <li
@@ -165,24 +183,103 @@
             </div>
           </div>
           <!-- end menu -->
+           <!-- mobile nav -->
+           <div class="navbar-mobile py-4 px-1 d-none">
+            <div class="closeIcon my-2 position-relative">
+              <div class="position-absolute xxx px-3">
+                <i class="fa-solid fa-xmark crusor-pointer"></i>
+              </div>
+            </div>
+            <div class="accordion my-5" id="accordionExample">
+              <div class="accordion-item collapsed">
+                <h2 class="accordion-header">
+                  <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    علامات التجاريه
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse " data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ul class="list-unstyled p-0">
+                      <li class="list-mobile my-2">
+                        <a href="#" class="text-black text-decoration-none fw-bold py-2 d-block">
+                          هانجاي
+                        </a>
+                      </li>
+                      <li class="list-mobile my-2">
+                        <a href="#" class="text-black text-decoration-none fw-bold py-2 d-block">
+                          ساويست
+                        </a>
+                        <span>
+                          
+                        </span>
+                      </li>
+                      <li class="list-mobile my-2">
+                        <a href="#" class="text-black text-decoration-none fw-bold py-2 d-block">
+                          ساويست
+                        </a>
+                      </li>
+                      <li class="list-mobile my-2">
+                        <a href="#" class="text-black text-decoration-none fw-bold py-2 d-block">
+                          الدراجات النارية
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    العروض 
+                  </button>
+                </h2>
+
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    الصيانة وقطع غيار 
+                  </button>
+                </h2>
+
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    مواقعنا
+                  </button>
+                </h2>
+
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    الاخبار
+                  </button>
+                </h2>
+
+              </div>
+            </div>
+           </div>
+
         </nav>
       </header>
       <!-- end navbar -->
       <!-- start main  -->
       <main class="vh-100 overflow-hidden">
-        <div class="your-slider ">
-          <div class="sliders d-flex justify-content-between  ">
+        <div class="your-slider">
+          <div class="sliders d-flex justify-content-between">
             <div
               class="slide-content d-flex justify-content-center text-center flex-column"
             >
               <h3 class="fw-bold fs-1 py-3">
-                تحقيق فوز جديد لهـونـدا عبر مفهوم تصميم سيارة صالون 0 سيريس
+                تحقيق فوز جديد هانجاي عبر مفهوم تصميم سيارة صالون 0 سيريس
                 "الأفضل من بين الأفضل" في جوائز ريد دوت للتصميم
               </h3>
               <p>
-                تحتفل هـونـدا بمزيد من جوائز ريد دوت حيث حقق الطراز الرائد (Honda
-                0 Series) الفوز بجائزة (Red Dot: Best of the Best 2024) ضمن فئة
-                مفهوم التصميم.
+                تحتفل هانجاي بمزيد من جوائز ريد دوت حيث حقق الطراز الرائد
+                (Honda 0 Series) الفوز بجائزة (Red Dot: Best of the Best 2024)
+                ضمن فئة مفهوم التصميم.
               </p>
               <p>
                 كما تم منح تكريم لـ Space-Hub وهو ضمن مفهوم نفس فئة (Honda 0
@@ -203,13 +300,13 @@
               class="slide-content d-flex justify-content-center text-center flex-column"
             >
               <h3 class="fw-bold fs-1 py-3">
-                فوز "فيكتوريوس جاجسر" بسباق الجائزة الكبرى التشيكي بعد فوزه الثاني
-                المثير للإعجاب في سباق الدراجات النارية.
+                فوز "فيكتوريوس جاجسر" بسباق الجائزة الكبرى التشيكي بعد فوزه
+                الثاني المثير للإعجاب في سباق الدراجات النارية.
               </h3>
               <p>
-                تحتفل هـونـدا بمزيد من جوائز ريد دوت حيث حقق الطراز الرائد (Honda
-                0 Series) الفوز بجائزة (Red Dot: Best of the Best 2024) ضمن فئة
-                مفهوم التصميم.
+                تحتفل هانجاي بمزيد من جوائز ريد دوت حيث حقق الطراز الرائد
+                (Honda 0 Series) الفوز بجائزة (Red Dot: Best of the Best 2024)
+                ضمن فئة مفهوم التصميم.
               </p>
               <p>
                 كما تم منح تكريم لـ Space-Hub وهو ضمن مفهوم نفس فئة (Honda 0
@@ -229,15 +326,15 @@
               class="slide-content d-flex justify-content-center text-center flex-column"
             >
               <h3 class="fw-bold fs-1 py-3">
-                أطلقت شركة هـونـدا موتـور (الشرق الأوسط وأفريقيا) أول محرك V8 –
-                هـونـدا مارين BF350 الجديدة
+                أطلقت شركة هانجاي موتـور (الشرق الأوسط وأفريقيا) أول محرك V8 –
+                هانجاي مارين BF350 الجديدة
               </h3>
               <p>
-                أخيراً حصل تيم جاجسر من فريق HRC على الفوز الإجمالي في حلبة لوكيت
-                في جمهورية التشيك بعد سنوات من المحاولة، حيث سجل نتيجة ثلاثة واحد
-                حيث عمت مظاهر الاحتفال والابتهاج خصوصاً بين العديد من المشجعين
-                السلوفينيين. كما رفع السلوفيني تقدمه في البطولة إلى 36 نقطة على
-                أقرب منافسيه
+                أخيراً حصل تيم جاجسر من فريق HRC على الفوز الإجمالي في حلبة
+                لوكيت في جمهورية التشيك بعد سنوات من المحاولة، حيث سجل نتيجة
+                ثلاثة واحد حيث عمت مظاهر الاحتفال والابتهاج خصوصاً بين العديد من
+                المشجعين السلوفينيين. كما رفع السلوفيني تقدمه في البطولة إلى 36
+                نقطة على أقرب منافسيه
               </p>
             </div>
             <div class="slide-img">
@@ -253,15 +350,15 @@
               class="slide-content d-flex justify-content-center text-center flex-column"
             >
               <h3 class="fw-bold fs-1 py-3">
-                فوز "فيكتوريوس جاجسر" بسباق الجائزة الكبرى التشيكي بعد فوزه الثاني
-                المثير للإعجاب في سباق الدراجات النارية.
+                فوز "فيكتوريوس جاجسر" بسباق الجائزة الكبرى التشيكي بعد فوزه
+                الثاني المثير للإعجاب في سباق الدراجات النارية.
               </h3>
               <p>
-                أخيراً حصل تيم جاجسر من فريق HRC على الفوز الإجمالي في حلبة لوكيت
-                في جمهورية التشيك بعد سنوات من المحاولة، حيث سجل نتيجة ثلاثة واحد
-                حيث عمت مظاهر الاحتفال والابتهاج خصوصاً بين العديد من المشجعين
-                السلوفينيين. كما رفع السلوفيني تقدمه في البطولة إلى 36 نقطة على
-                أقرب منافسيه
+                أخيراً حصل تيم جاجسر من فريق HRC على الفوز الإجمالي في حلبة
+                لوكيت في جمهورية التشيك بعد سنوات من المحاولة، حيث سجل نتيجة
+                ثلاثة واحد حيث عمت مظاهر الاحتفال والابتهاج خصوصاً بين العديد من
+                المشجعين السلوفينيين. كما رفع السلوفيني تقدمه في البطولة إلى 36
+                نقطة على أقرب منافسيه
               </p>
             </div>
             <div class="slide-img">
@@ -277,15 +374,15 @@
               class="slide-content d-flex justify-content-center text-center flex-column"
             >
               <h3 class="fw-bold fs-1 py-3">
-                إحراز هوندا بايلوت أعلى تقييم من معهد التأمين للسلامة على الطرق
+                إحراز هانجاي بايلوت أعلى تقييم من معهد التأمين للسلامة على الطرق
                 السريعة
               </h3>
               <p>
-                أخيراً حصل تيم جاجسر من فريق HRC على الفوز الإجمالي في حلبة لوكيت
-                في جمهورية التشيك بعد سنوات من المحاولة، حيث سجل نتيجة ثلاثة واحد
-                حيث عمت مظاهر الاحتفال والابتهاج خصوصاً بين العديد من المشجعين
-                السلوفينيين. كما رفع السلوفيني تقدمه في البطولة إلى 36 نقطة على
-                أقرب منافسيه
+                أخيراً حصل تيم جاجسر من فريق HRC على الفوز الإجمالي في حلبة
+                لوكيت في جمهورية التشيك بعد سنوات من المحاولة، حيث سجل نتيجة
+                ثلاثة واحد حيث عمت مظاهر الاحتفال والابتهاج خصوصاً بين العديد من
+                المشجعين السلوفينيين. كما رفع السلوفيني تقدمه في البطولة إلى 36
+                نقطة على أقرب منافسيه
               </p>
             </div>
             <div class="slide-img">
@@ -307,7 +404,11 @@
               class="h-100 position-relative crusor-pointer border border-3 border-black"
             >
               <div class="overlay"></div>
-              <img src="assets/images/5.webp" alt="firstimg" class="gallery-img" />
+              <img
+                src="assets/images/5.webp"
+                alt="firstimg"
+                class="gallery-img"
+              />
               <div class="position-absolute img-title">
                 <h1 class="fw-bold text-white">هانجاي</h1>
               </div>
@@ -318,7 +419,11 @@
               class="h-49 hamada crusor-pointer position-relative border border-3 border-black mb-1"
             >
               <div class="overlay"></div>
-              <img src="assets/images/5.webp" alt="second" class="gallery-img" />
+              <img
+                src="assets/images/5.webp"
+                alt="second"
+                class="gallery-img"
+              />
               <div class="position-absolute img-title">
                 <h1 class="fw-bold text-white">ساويست</h1>
               </div>
@@ -352,7 +457,7 @@
               </div>
             </div>
             <div
-              class="h-33  hamada crusor-pointer position-relative border border-3 border-black mb-1"
+              class="h-33 hamada crusor-pointer position-relative border border-3 border-black mb-1"
             >
               <div class="overlay"></div>
               <img src="assets/images/5.webp" alt="aaaa" class="gallery-img" />
@@ -374,9 +479,9 @@
       </section>
       <!-- end gallery section -->
       <!-- start section news -->
-      <section id="news" class="pt-5">
+      <section id="news" class="pt-5 ">
         <h1 class="main-title scound-color fw-bold py-5 me-4">اخبارنا</h1>
-        <div class="row m-0">
+        <div class="row m-0 wow animate__backInRight">
           <div class="col-md-3 p-0">
             <div class="">
               <div class="text p-4">
@@ -490,22 +595,26 @@
       <footer class="py-5">
         <div class="contact">
           <div class="row flex- container m-auto">
-            <div class="contact-item col-sm-12 col-md-4 d-flex justify-content-center align-items-center">
-              <h3>احصل
-              علي اخر مستجدات هوندا
-            </h3>
-              <img src="assets/images/new-letter.svg"></img>
-             </div>
-              <div class="contact-item col-sm-12 col-md-5 d-flex justify-content-center align-items-center">
-                <input type="email" placeholder="البريد الالكتروني"> 
-                <input type="text" placeholder="الاسم الكامل">
-              </div>
-             
-             <div class="contact-item col-sm-6 col-md-3 d-flex justify-content-center align-items-center">
-              <button class=" d-flex justify-content-between align-items-center">
-                    <i class="bi bi-arrow-left"></i>
-                    <span>الاشتراك</span>
-                  </button>
+            <div
+              class="contact-item col-sm-12 col-md-4 d-flex justify-content-center align-items-center"
+            >
+              <h3>احصل علي اخر مستجدات هوندا</h3>
+              <!-- <img src="assets/images/new-letter.svg"></img> -->
+            </div>
+            <div
+              class="contact-item col-sm-12 col-md-5 d-flex justify-content-center align-items-center"
+            >
+              <input type="email" placeholder="البريد الالكتروني" />
+              <input type="text" placeholder="الاسم الكامل" />
+            </div>
+
+            <div
+              class="contact-item col-sm-6 col-md-3 d-flex justify-content-center align-items-center"
+            >
+              <button class="d-flex justify-content-between align-items-center">
+                <i class="bi bi-arrow-left"></i>
+                <span>الاشتراك</span>
+              </button>
             </div>
           </div>
         </div>
@@ -517,7 +626,9 @@
                 <ul class="list-unstyled p-0 my-4">
                   <li><a href="#" class="text-decoration-none">سيارات</a></li>
                   <li>
-                    <a href="#" class="text-decoration-none">الدراجات النارية</a>
+                    <a href="#" class="text-decoration-none"
+                      >الدراجات النارية</a
+                    >
                   </li>
                   <li>
                     <a href="#" class="text-decoration-none">منتجات الطاقة</a>
@@ -570,7 +681,9 @@
                 <h4 class="footer-title text-white">روابط مفيدة</h4>
                 <ul class="list-unstyled p-0 my-4">
                   <li>
-                    <a href="#" class="text-decoration-none">هوندا حول العالم </a>
+                    <a href="#" class="text-decoration-none"
+                      >هوندا حول العالم
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -596,13 +709,17 @@
                       المملكة العربية السعودية
                     </a>
                   </li>
-                  <li><a href="#" class="text-decoration-none"> البحرين </a></li>
+                  <li>
+                    <a href="#" class="text-decoration-none"> البحرين </a>
+                  </li>
                   <li><a href="#" class="text-decoration-none"> الأردن </a></li>
                   <li><a href="#" class="text-decoration-none"> لبنان </a></li>
                   <li>
                     <a href="#" class="text-decoration-none"> سلطنة عمان </a>
                   </li>
-                  <li><a href="#" class="text-decoration-none"> دولة قطر </a></li>
+                  <li>
+                    <a href="#" class="text-decoration-none"> دولة قطر </a>
+                  </li>
                   <li><a href="#" class="text-decoration-none"> مصر </a></li>
                   <li><a href="#" class="text-decoration-none"> Benin </a></li>
                 </ul>
@@ -612,7 +729,6 @@
         </div>
       </footer>
       <!-- end footer -->
-  </div>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"
@@ -621,6 +737,7 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"
     ></script>
+    <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
